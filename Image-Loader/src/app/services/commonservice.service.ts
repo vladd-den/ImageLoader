@@ -8,7 +8,7 @@ export class CommonserviceService {
 
   constructor(private http: HttpClient) { }
 
-  BasicUrl = "http://localhost:57968/api/";
+  BasicUrl = "http://vladdden-001-site1.ctempurl.com/api/";
 
   getImage(){
     return this.http.get(this.BasicUrl + "Home/Images");
