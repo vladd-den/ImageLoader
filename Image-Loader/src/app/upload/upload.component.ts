@@ -24,7 +24,7 @@ export class UploadComponent implements OnInit {
 
     formData.append('file', fileToUpload, fileToUpload.name);
     this.http.post('http://vladdden-001-site1.ctempurl.com/api/Home/Upload', formData)
-      .subscribe(event => { alert("UPLOADED") });
+      .subscribe(event => { console.log(event) });
       const reader = new FileReader();
     this.imagePath = files;
     reader.readAsDataURL(files[0]); 
