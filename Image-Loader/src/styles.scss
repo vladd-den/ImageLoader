@@ -1,0 +1,95 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    min-height: 200vh;
+    background: #222;
+}
+.container{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+.container .box{
+    color: #929;
+    background: #333;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+}
+.container .box:hover{
+    background: #e91e94;
+
+}
+.container .box img{
+    position: relative;
+    max-width: 1200px;
+    margin-bottom: 10px;
+}
+.container .box:nth-child(1){
+    size: inherit;
+    grid-column: span 4;
+    grid-row: 1;
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255, 163, 255);
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .btn{
+      width: 30%;
+      display: block;
+      margin: 0 auto;
+  }
+  p{
+      max-width: 500px;
+      color: white;
+  }

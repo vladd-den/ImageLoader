@@ -1,0 +1,16 @@
+<div class="sidenav">
+    <a routerLink="/home">Home</a>
+    <a routerLink="/upload">Upload</a>
+    <a routerLink="/references">References</a>
+</div>
+<div class="container">
+    <div class="box">
+        <p>There will be your loaded image</p>
+        <div class="content">
+            <img src={{url}}>
+        </div>
+    </div>
+    <input type="file" #file placeholder="Choose file" (change)="uploadFile(file.files)" style="display:none;">
+    <button type="button" class="btn btn-success btn-sm" (click)="file.click()">Upload
+        File</button>
+</div>

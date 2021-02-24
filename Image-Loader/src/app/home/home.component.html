@@ -1,0 +1,13 @@
+<div class="sidenav">
+    <a routerLink="/home">Home</a>
+    <a routerLink="/upload">Upload</a>
+    <a routerLink="/references">References</a>
+  </div>
+<div class="container" *ngFor="let image of images">
+    <div class="box">
+        <div class="content">
+            <img [src]='image.imageData'>
+            <p></p>
+        </div>
+    </div>
+</div>
